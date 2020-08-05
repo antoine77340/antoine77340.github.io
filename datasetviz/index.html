@@ -1,0 +1,112 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <title>Video Dataset Overview</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/tablesort.css" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-102875795-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<style>
+
+body {
+    background-color: #fff0e7;
+}
+
+h1 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+h2 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+h3 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+h4 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+h5 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+td {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+th {
+    font-size: 130%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+</style>
+
+</head>
+<body ng-controller="MainController">
+<div class="container-fluid theme-showcase" role="main">
+    <div class="container">
+            <h1>Video Dataset Overview</h1>
+            <h3>Sortable and searchable compilation of video dataset</h3>
+			<h5>Author: <a href="http://www.di.ens.fr/~miech">Antoine Miech</a></h5>
+			<h5>Last Update: 17 October 2019</h5>
+    </div>
+
+    <form class="form-inline">
+        <div class="form-group">
+            <input ng-model="search.$" class="form-control" id="search" placeholder="Search">
+        </div>
+    </form>
+    <div class="row" style="overflow: scroll">
+        <table class="table" ts-wrapper>
+            <thead>
+            <tr>
+			    <th></th>
+                <th ts-criteria="datasetTitle|lowercase">Dataset</th>
+				<th ts-criteria="type|lowercase">Type</th>
+				<th ts-criteria="numberOfVideos" style="min-width: 100px;">#Videos</th>
+				<th ts-criteria="annotation|lowercase">Annotation</th>
+				<th ts-criteria="annotationType|lowercase">Annotation Type</th>
+				<th ts-criteria="publishedYear" style="min-width: 75px;">Year</th>
+				<th>Paper</th>
+				<th>Comments</th>
+            </tr>
+            </thead>
+			
+            <tbody>
+            <tr ng-repeat="competition in competitions | filter:search:strict" ts-repeat>
+			    <td>
+                    <a target="_blank" ng-href="{{competition.websiteUrl}}">
+                        <img ng-src="{{competition.thumbnailImageUrl}}" alt="Logo" width="200"/>
+                    </a>
+                </td>
+                <td>
+                    <h4><a target="_blank" ng-href="{{competition.websiteUrl}}">{{competition.datasetTitle}}</a></h4>
+                    <p>{{competition.datasetDescription}}</p>
+                </td>
+				<td>{{competition.type}}</td>
+			    <td>{{competition.numberOfVideos}}</td>
+				<td>{{competition.annotation}}</td>
+                 <td><span ng-repeat="type in competition.annotationType">{{type}}{{$last ? '' : ', '}} </span></td>
+				<td>{{competition.publishedYear}}</td>
+				<td><a target="_blank" ng-href="{{competition.paperUrl}}">Link</a></td>
+				<td>{{competition.comment}}</td>
+            </tr>
+			
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="vendors/angular-tablesort.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

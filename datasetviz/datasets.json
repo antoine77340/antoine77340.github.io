@@ -1,0 +1,16 @@
+[
+    {
+        "datasetId": 001,
+        "datasetTitle": "HMDB51",
+        "datasetDescription": "HMDB: A Large Video Database for Human Motion Recognition",
+        "websiteUrl": "http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/",
+        "thumbnailImageUrl": "https://kaggle2.blob.core.windows.net/competitions/kaggle/6004/logos/front_page.png",
+		"paperUrl": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf",
+        "publishedYear": "2011",
+        "type": "Action recognition",
+        "numberOfVideos": 6766,
+        "annotation": "51 action classes",
+        "annotationTypes": ["pre-defined classes"],
+        "comment": ""
+    }
+]

@@ -1,1 +1,338 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-102875795-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Antoine Miech</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="New Site
+">
+     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="./web-dist/css/main.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.5/js/tether.min.js"></script>
+    <script src="./web-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/266c035ce0.js"></script>
+    <script src="./web-dist/js/app.js"></script>
+</head>
+
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="navbar-brand hidden-xs-down navbar-logo" href="/">Antoine Miech</div>
+    <button class="navbar-toggler hidden-sm-up collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#CollapsingNavbar"
+            aria-controls="CollapsingNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <div class="navbar-brand navbar-brand--mobile hidden-sm-up navbar-logo" href="/">Antoine Miech</div>
+    <div class="collapse navbar-toggleable-xs pull-sm-right" id="CollapsingNavbar">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <div class="nav-link" data-link=".container-about">Bio</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" data-link=".container-publications">Publications</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" data-link=".container-instagram">Misc.</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" data-link=".container-contacts">Contacts</div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <header class="container-fluid container-top">
+    <div class="row">
+        <col-md-12>
+            <img src="./web-dist/images/profile.png" class="container-top-image img-circle m-x-auto enlarge" alt="Antoine Miech">
+            <h1 class="container-top-name">
+                Antoine Miech
+            </h1>
+            <h2 class="container-top-headline">
+                Ph.D. student
+            </h2>
+        </col-md-12>
+    </div>
+</header>
+
+        <section class="container container-about">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Bio</h1>
+			<hr>
+        </div>
+            <p align="justify">
+            I am a fourth year Computer Vision Ph.D. student in the <a href='http://www.di.ens.fr/willow/' target="_blank">WILLOW</a> project-team which is part of <a href='https://www.inria.fr' target="_blank">Inria</a> and <a href='http://www.ens.fr' target="_blank"> Ecole Normale Supérieure</a>, working with <a href='https://www.di.ens.fr/~laptev/' target="_blank">Ivan Laptev</a> and <a href='http://www.di.ens.fr/~josef/' target="_blank">Josef Sivic</a>. 
+My main research interests are video understanding and weakly-supervised machine learning. More generally, I am interested in everything related to Computer Vision, Machine Learning and Natural Language Processing.
+During the 2018 summer, I had the chance to collaborate with <a href='https://dutran.github.io/' target="_blank">Du Tran</a>, <a href='https://hengcv.github.io/' target="_blank">Heng Wang</a> and <a href='https://www.cs.dartmouth.edu/~lorenzo/home.html' target="_blank">Lorenzo Torresani</a> at Facebook AI.
+I was also lucky enough to be awarded the <a href="https://research.googleblog.com/2018/04/announcing-2018-google-phd-fellows-for.html">Google Ph.D. fellowship</a> in 2018.
+I will be joining DeepMind as a Research Scientist in August for more video and language research :D. 
+
+<br>
+<br>
+<br>
+<b>Invited talk:</b>
+<ul>
+<li> November 27th 2018: University of Bristol, Bristol 
+<li> July 24th 2018: Google, Mountain View 
+<li> July 3rd 2018: Google, Paris 
+<li> March 23th 2018: LSCP-ENS, Paris 
+<li> September 12th 2017: Facebook AI Research, Paris
+<li> July 26th 2017: CVPR17 Youtube-8M Workshop, Hawaii
+<li> July 7th 2017: DGA TIM2017 Seminar, Paris 
+<li> July 4th 2017: Kaggle ML Meetup, Paris
+<li> June 27th 2017: Paris ML Meetup, Paris 
+</ul>
+            </p>
+    </div>
+</section>
+
+
+
+        <section class="container container-publications">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Publications</h1>
+			<hr>
+        </div>
+       
+        </div>
+
+    <div class="row">
+        <div class="col-md-4">
+ <center><a href="web-dist/images/mil-nce.jpg"><img class="enlarge" src="web-dist/images/mil-nce.jpg" width="300" style="border:1px solid black"></a></center>        </div>
+
+        <div class="col-md-8">
+            <h5><b> End-to-End Learning of Visual Representations from Uncurated Instructional Videos</b></h5>
+            <h6>    <b>Antoine Miech*</b>, Jean-Baptiste Alayrac*, Lucas Smaira, Ivan Laptev, Josef Sivic and Andrew Zisserman</h6>
+            <h6> CVPR 2020 (Oral) </h6>
+            <h6>   <a href="https://arxiv.org/abs/1912.06430">arXiv</a>, <a href="http://www.di.ens.fr/willow/research/mil-nce/">webpage</a>, <a href="http://tfhub.dev/deepmind/mil-nce/i3d/1">I3D TF model</a>, <a href="http://tfhub.dev/deepmind/mil-nce/s3d/1">S3D TF model</a>, <a href="https://github.com/antoine77340/S3D_HowTo100M">S3D PT model</a>, <a href="http://howto100m.inria.fr/youcook">YouCook2 zero-shot search demo</a> </h6>
+
+            <h6>   <p align="justify">Abstract: Annotating videos is cumbersome, expensive and not scalable. Yet, many strong video models still rely on manually annotated data. With the recent introduction of the HowTo100M dataset, narrated videos now offer the possibility of learning video representations without manual supervision. In this work we propose a new learning approach, MIL-NCE, capable of addressing misalignments inherent to narrated videos. With this approach we are able to learn strong video representations from scratch, without the need for any manual annotation. We evaluate our representations on a wide range of four downstream tasks over eight datasets: action recognition (HMDB-51, UCF-101, Kinetics-700), text-to-video retrieval (YouCook2, MSR-VTT), action localization (YouTube-8M Segments, CrossTask) and action segmentation (COIN). Our method outperforms all published self-supervised approaches for these tasks as well as several fully supervised baselines.</p> </h6> 
+        </div>
+
+        </div>
+
+<br>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+ <center><a href="web-dist/images/howto100m.png"><img class="enlarge" src="web-dist/images/howto100m.png" width="300" style="border:1px solid black"></a></center>        </div>
+
+        <div class="col-md-8">
+            <h5><b> HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips</b></h5>
+            <h6>    <b>Antoine Miech*</b>, Dimitri Zhukov*, Jean-Baptiste Alayrac, Makarand Tapaswi, Ivan Laptev and Josef Sivic </h6>
+            <h6>   ICCV 2019 </h6>
+            <h6>   <a href="https://arxiv.org/abs/1906.03327">arXiv</a>,  <a href="http://www.di.ens.fr/willow/research/howto100m/">webpage</a>, <a href="https://github.com/antoine77340/howto100m">code</a></h6>
+            <h6>   <p align="justify">Abstract: Learning text-video embeddings usually requires a dataset of video clips with manually provided captions. However, such datasets are expensive and time consuming to create and therefore difficult to obtain on a large scale. In this work, we propose instead to learn such embeddings from video data with readily available natural language annotations in the form of automatically transcribed narrations. We introduce HowTo100M: a large-scale dataset of 136 million video clips sourced from 1.22M narrated instructional web videos depicting humans performing and describing over 23k different visual tasks. Our data collection procedure is fast, scalable and does not require any additional manual annotation. Second, we demonstrate that a text-video embedding trained on this data leads to state-of-the-art results for text-to-video retrieval and action localization on instructional video datasets such as YouCook2, CrossTask, MSR-VTT.</p> </h6> 
+        </div>
+
+        </div>
+
+<br>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+ <center><a href="web-dist/images/teaser_cvprw19.png"><img class="enlarge" src="web-dist/images/teaser_cvprw19.png" width="300" style="border:1px solid black"></a></center>        </div>
+
+        <div class="col-md-8">
+            <h5><b> Leveraging the Present to Anticipate the Future in Videos</b></h5>
+            <h6>    <b>Antoine Miech</b>, Ivan Laptev, Josef Sivic, Heng Wang, Lorenzo Torresani and Du Tran </h6>
+            <h6>   CVPR 2019 Precognition workshop</h6>
+            <h6>   <a href="http://openaccess.thecvf.com/content_CVPRW_2019/html/Precognition/Miech_Leveraging_the_Present_to_Anticipate_the_Future_in_Videos_CVPRW_2019_paper.html">paper</a></h6>
+            <h6>   <p align="justify">Abstract: Anticipating actions before they are executed is crucial for a wide range of practical applications including autonomous driving and the moderation of live video streaming. While most prior work in this area requires partial observation of executed actions, in the paper we focus on anticipating actions seconds before they start. Our proposed approach is the fusion of a purely anticipatory model with a complementary model constrained to reason about the present. In particular, the latter predicts present action and scene attributes, and reasons about how they evolve over time. By doing so, we aim at modeling action anticipation at a more conceptual level than directly predicting future actions. Our model outperforms previously reported methods on the EPIC-KITCHENS and Breakfast datasets.</p> </h6> 
+        </div>
+
+        </div>
+
+<br>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+ <center><a href="web-dist/images/MEE.png"><img class="enlarge" src="web-dist/images/MEE.png" width="300" style="border:1px solid black"></a></center>        </div>
+
+        <div class="col-md-8">
+            <h5><b> Learning a Text-Video Embedding from Incomplete and Heterogeneous Data</b></h5>
+            <h6>    <b>Antoine Miech</b>, Ivan Laptev and Josef Sivic </h6>
+            <h6>    arXiv preprint </h6>
+            <h6>   <a href="https://arxiv.org/abs/1804.02516">arXiv</a>,  <a href="http://www.di.ens.fr/willow/research/mee/">webpage</a>, <a href="https://github.com/antoine77340/Mixture-of-Embedding-Experts">code</a> </h6>
+            <h6>   <p align="justify">Abstract: Joint understanding of video and language is an active research area with many applications.
+Prior work in this domain typically relies on learning text-video embeddings.
+One difficulty with this approach, however, is the lack of large-scale annotated video-caption datasets for training.
+To address this issue, we aim at learning text-video embeddings from heterogeneous data sources.
+To this end, we propose a Mixture-of-Embedding-Experts (MEE) model with ability to handle missing input modalities during training.
+As a result, our framework can learn improved text-video embeddings simultaneously from image and video datasets.
+We also show the generalization of MEE to other input modalities such as face descriptors.
+</p> </h6> 
+        </div>
+
+        </div>
+
+<br>
+
+    <div class="row">
+        <div class="col-md-4">
+ <center><a href="web-dist/images/teaser_cvpr17.jpeg"><img class="enlarge" src="web-dist/images/teaser_cvpr17.jpeg" width="300" style="border:1px solid black"></a></center>
+        </div>
+
+        <div class="col-md-8">
+            <h5><b> Learning from Video and Text via Large-Scale Discriminative Clustering</b></h5>
+            <h6>    <b>Antoine Miech</b>, Jean-Baptiste Alayrac, Piotr Bojanowski, Ivan Laptev and Josef Sivic </h6>
+            <h6>    ICCV 2017 (Spotlight: acceptance rate 4.70%) </h6>
+            <h6>    <a href="https://arxiv.org/abs/1707.09074">arXiv</a>, <a href="http://www.di.ens.fr/willow/research/learningvideotext/">webpage</a>, <a href="http://www.di.ens.fr/~miech/ICCV17.pdf">poster</a>  </h6>
+            <h6>   <p align="justify">Abtsract: Discriminative clustering has been successfully applied to a number of weakly-supervised learning tasks. One drawback of discriminative clustering, however, is its limited scalability.
+We address this issue and propose an online optimization algorithm based on the Block-Coordinate Frank-Wolfe algorithm.
+We apply it to the problem of weakly-supervised learning of actions and actors from movies and corresponding movie scripts as supervision. </p> </h6>
+        </div>
+
+        </div>
+<br>
+    <div class="row">
+        <div class="col-md-4">
+<center><a href="web-dist/images/loupe.jpg"><img class="enlarge" src="web-dist/images/loupe.jpg" width="300" style="border:1px solid black"></a></center>
+        </div>
+
+        <div class="col-md-8">
+            <h5>    <b>Learnable pooling with Context Gating for video classification</b></h5>
+            <h6>    <b>Antoine Miech</b>, Ivan Laptev and Josef Sivic </h6>
+            <h6>    CVPR 2017 Youtube-8M Workshop (Oral + Kaggle winning approach) </h6>
+            <h6>    <a href="https://arxiv.org/abs/1706.06905">arXiv</a>, <a href="https://github.com/antoine77340/LOUPE">code</a>, <a href="https://github.com/antoine77340/Youtube-8M-WILLOW">Kaggle submission code</a>, <a href="poster_Youtube8M.pdf">poster</a>, <a href="https://docs.google.com/presentation/d/1Uv64Ie_zmOSgJubbBZ8dIQhs40FGYp4dQh5ab9GiXkQ/edit?usp=sharing">slides</a></h6>
+
+            <h6>   <p align="justify">Abtract: We present state-of-the-art end-to-end learnable pooling method for video classification.
+                                    Our method was used to achieve the best performance in the kaggle Youtube 8M challenge out of 650 teams.</p> </h6>
+
+        </div>
+        </div>
+
+        </div>
+
+
+</section>
+
+        <section class="container container-instagram">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Misc.</h1>
+			<hr>
+        </div>
+     </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <center><img class="dsg" src="retrieval.png" width="100"></center><br>
+        </div>
+
+        <div class="col-md-10">
+          <p align ="justify"> <a href='http://willow-demo.inria.fr' target="_blank">MEE Text-to-Video Search Engine</a> is Text-to-Video web demo search engine based on our proposed Mixture-of-Embedding-Experts (MEE) model. The model was trained on the MPII movie training set and it is tested on both MPII validation and test set and the MSR-VTT dataset. Our web demo runs in real time on a CPU based machine.</p> 
+ 
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <center><img class="dsg" src="vdo.png" width="100"></center><br>
+        </div>
+
+        <div class="col-md-10">
+       <p align ="justify"> <a href='http://www.di.ens.fr/~miech/datasetviz/' target="_blank">Video Dataset Overview</a> is a Searchable and sortable compilation of annotated video datasets I am currently maintaining. It is supposed to help people to have a global overview of the existing annotated video datasets as well as some important features such as their size, published year or annotation type.</p>
+      
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <center><img class="dsg" src="web-dist/images/TF.png" width="100"></center><br>
+        </div>
+        <div class="col-md-10">
+    <p align ="justify"> <a href='https://github.com/antoine77340/LOUPE' target="_blank">LOUPE (Learnable mOdUle for Pooling fEatures)</a> is a Tensorflow toolbox that implements
+several modules for pooling features such as NetVLAD, NetRVLAD, NetFV and Soft-DBoW. It also allows to use their Gated version. This toolbox was mainly use in the winning approach of the Youtube 8M Large Scale Video Understanding challenge.</p>
+      
+
+    </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <center><img class="dsg" src="web-dist/images/logoDSG.png" width="100"></center><br>
+        </div>
+        <div class="col-md-10">
+ <p  align="justify">The <a href='http://www.datasciencegame.com/' target="_blank">Data Science Game</a> is a student only and worldwide machine learning   competition.
+         I have been involved in the project in 2016 and 2017 as an organizer.</p> 
+
+         The 2016 edition was very successful, we got invited at NIPS 2016 CiML Workshop to present this <a href='web-dist/docs/posterdsg16.pdf' target="_blank">poster</a>.
+ 
+        </div>
+
+
+
+    </div>
+
+    
+</section>
+<br>
+        <footer class="container-fluid container-contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contacts</h1>
+            </div>
+            <div class="col-md-4 col-sm-12 container-contacts-phone">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:firstname.lastname@inria.fr">
+                    firstname.lastname@inria.fr
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12 container-contacts-phone">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="https://twitter.com/antoine77340">
+                    antoine77340
+                </a>
+             </div>
+             <div class="col-md-4 col-sm-12 container-contacts-phone">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/antoine77340">
+                    antoine77340
+                </a>
+           </div>
+        </div>
+    </div>
+</footer>
+
+        <footer class="container-fluid container-copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                &copy;&nbsp;( ͡° ͜ʖ ͡°) | Design:&nbsp;<a href="https://github.com/portfolio-central/jekyll-instagram-portfolio-theme">Jekyll&nbsp;Instagram&nbsp;Portfolio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+   </body>
+</html>

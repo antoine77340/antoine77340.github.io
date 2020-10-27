@@ -479,7 +479,7 @@
         "datasetId": 5035,
         "datasetTitle": "VATEX",
         "datasetDescription": "VATEX is a multilingual video description dataset.",
-        "websiteUrl": "http://vatex.org/main/index.html",
+        "websiteUrl": "https://eric-xw.github.io/vatex-website/",
         "thumbnailImageUrl": "https://www.rocq.inria.fr/cluster-willow/amiech/vatex.png",
 	"paperUrl": "https://arxiv.org/pdf/1904.03493.pdf",
         "publishedYear": 2019,
